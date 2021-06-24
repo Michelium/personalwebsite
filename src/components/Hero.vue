@@ -21,7 +21,7 @@ export default {
 section {
     background-image: url("~@/assets/images/hero/hero.png");
     background-size: 60%;
-    background-position: bottom right;
+    background-position: right 75%;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-color: black;
@@ -45,4 +45,9 @@ section {
     }
 }
 
+@media (max-width: 425px) {
+    section {
+        background-position: center 75%;
+    }
+}
 </style>
