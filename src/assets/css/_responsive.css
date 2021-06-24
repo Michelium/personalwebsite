@@ -14,6 +14,10 @@
     p {
         font-size: 17px;
     }
+
+    section:not(#header) {
+        margin-bottom: 100px;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 991px) {
@@ -31,5 +35,9 @@
 
     p {
         font-size: 20px;
+    }
+
+    section:not(#header) {
+        margin-bottom: 100px;
     }
 }

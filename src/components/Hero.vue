@@ -27,6 +27,11 @@ section {
     background-color: black;
 }
 
+h2 {
+    text-transform: unset;
+    margin-bottom: unset;
+}
+
 @media (min-width: 991px) {
     .text-section {
         white-space: nowrap;

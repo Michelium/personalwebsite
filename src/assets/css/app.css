@@ -5,6 +5,8 @@
 :root {
     --purple: #8D39FA;
     --grey: #707070;
+    --light-grey: #ececec;
+    --dark-grey: #707070
 }
 
 main {
@@ -19,10 +21,18 @@ h1 {
 h2 {
     font-size: 40px;
     color: var(--grey);
+    text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 h3 {
     font-size: 30px;
+    color: var(--purple);
+}
+
+h4 {
+    font-size: 22px;
+    color: var(--dark-grey);
 }
 
 p {
