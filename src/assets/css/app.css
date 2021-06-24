@@ -1,1 +1,32 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "_responsive.css";
+
+:root {
+    --purple: #8D39FA;
+}
+
+main {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    color: var(--purple);
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.text-purple {
+    color: var(--purple);
+}
