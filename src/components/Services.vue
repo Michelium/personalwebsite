@@ -21,9 +21,9 @@
                     <div class="image">
                         <img src="~@/assets/images/services/card-2.svg" alt="Design">
                     </div>
-                    <h3>Web Development</h3>
-                    <h4>Snel en responsive voor elk scherm</h4>
-                    <p>Een website moet op elk scherm functioneren en een website moet zo snel mogelijk zijn. Hier houd ik me mee bezig als webdeveloper.</p>
+                    <h3>Web Design</h3>
+                    <h4>Design voor doelgroep van de website</h4>
+                    <p>De website wordt ontwikkeld voor de gebruikers hiervan. Het is belangrijk dat de informatie op je website jouw specifieke doelgroep aanspreekt.</p>
                 </div>
             </div>
             <div class="col-12 col-xl-4 mb-4 mb-xl-0">
@@ -31,9 +31,9 @@
                     <div class="image">
                         <img src="~@/assets/images/services/card-3.svg" alt="Onderhoud">
                     </div>
-                    <h3>Web Development</h3>
-                    <h4>Snel en responsive voor elk scherm</h4>
-                    <p>Een website moet op elk scherm functioneren en een website moet zo snel mogelijk zijn. Hier houd ik me mee bezig als webdeveloper.</p>
+                    <h3>Onderhoud</h3>
+                    <h4>Ook na oplevering up to date</h4>
+                    <p>Ook na oplevering van de website moeten er soms nog enkele dingen worden aangepast. Ik zorg dat ook na oplevering je website up to date blijft!</p>
                 </div>
             </div>
         </div>
@@ -70,6 +70,11 @@ export default {
     -webkit-box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.29);
     -moz-box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.29);
     box-shadow: 5px 5px 6px 0px rgba(0, 0, 0, 0.29);
+    transition: 0.2s;
+}
+
+.card:hover {
+    background-color: #d7d7d7;
 }
 
 .card img {
