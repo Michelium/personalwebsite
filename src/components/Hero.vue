@@ -1,7 +1,7 @@
 <template>
     <section id="hero">
         <div class="row mx-0">
-            <div class="col-12 col-md-8 offset-md-1 offset-lg-1 col-xl-6 offset-xl-2 text-section">
+            <div class="col-12 col-md-8 offset-md-1 offset-lg-1 col-xl-6 offset-xl-2 col-xxl-4 text-section">
                 <h2 class="text-white">Hallo, ik ben</h2>
                 <h1 class="text-purple text-uppercase fw-bolder">Michel Hamelink</h1>
                 <h3 class="text-white fw-normal w-100">Freelance webdeveloper en ik kan je helpen met <wbr> het onwikkelen van jouw nieuwe website.</h3>
