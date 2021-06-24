@@ -4,6 +4,7 @@
 
 :root {
     --purple: #8D39FA;
+    --grey: #707070;
 }
 
 main {
@@ -28,5 +29,9 @@ p {
 }
 
 .text-purple {
-    color: var(--purple);
+    color: var(--purple)!important;
+}
+
+.text-grey {
+    color: var(--grey)!important;
 }
