@@ -18,5 +18,5 @@ $headers[] = 'From: '.$name.' <noreply@michelhamelink.nl>';
 
 mail($to_email, $subject, $contents, implode("\r\n", $headers));
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: https://michelhamelink.nl');
 ?>
