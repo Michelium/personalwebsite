@@ -3,7 +3,8 @@
         <div class="row">
             <div class="col-12">
                 <h2>Contact</h2>
-                <p>Vul het formulier hieronder in en ik reageer binnen 1 werkdag! Je kunt me ook altijd bellen of een mailtje sturen op het onderstaande adres!</p>
+                <p>Vul het formulier hieronder in en ik reageer binnen 1 werkdag! <br>
+                    Je kunt me ook altijd bellen of een mailtje sturen op het onderstaande adres!</p>
             </div>
         </div>
         <div class="row">
@@ -28,7 +29,7 @@
                         <label for="message" class="text-uppercase">Hoe kan ik helpen?</label>
                         <textarea v-model="message" class="form-control bg-light py-2" name="message" id="message" autocomplete="off" required rows="5"></textarea>
                     </div>
-                    <button :disabled="loaded" type="submit" class="btn w-100">VERSTUUR</button>
+                    <button :disabled="!loaded" type="submit" class="btn w-100">VERSTUUR</button>
                 </form>
             </div>
             <div class="col-12 col-lg-6">
@@ -43,7 +44,7 @@
                                 </tr>
                                 <tr>
                                     <th>telefoon:</th>
-                                    <td class="float-end float-sm-none">06-16197852</td>
+                                    <td class="float-end float-sm-none"><a href="tel:06-16197852">06-16197852</a></td>
                                 </tr>
                                 <tr>
                                     <th>e-mail:</th>

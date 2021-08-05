@@ -31,7 +31,6 @@ export default {
 
 <style scoped>
 img {
-    border: var(--purple) 3px solid;
     border-radius: 15px;
     -webkit-box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.29);
     -moz-box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.29);

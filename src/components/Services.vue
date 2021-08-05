@@ -42,8 +42,8 @@
                 <div class="card py-4 text-start">
                     <h3>Beschikbaarheid</h3>
                     <p>Ik ben beschikbaar voor freelance opdrachten en kan na overleg direct aan de slag met je website.</p>
-                    <p>Samen met jou maak ik een schatting van het aantal benodigde uren en de geschatte kosten voor mijn diensten. Dit is aan de hand van mijn huidige ervaring.</p>
-                    <p>Momenteel ben ik het meest geinteresseerd in het maken van websites voor kleinere (startup) bedrijven, maar aarzel zeker niet om me een berichtje te sturen voor de mogelijkheden!</p>
+                    <p>Samen met jou maak ik een schatting van het aantal benodigde uren en de geschatte kosten voor mijn diensten. Deze schatting is afhankelijk van de onvang van het project en mijn huidige ervaring.</p>
+                    <p>Momenteel ben ik het meest geïnteresseerd in het maken van websites voor kleinere (startup) bedrijven, maar aarzel zeker niet om me een berichtje te sturen voor de mogelijkheden!</p>
                 </div>
             </div>
         </div>
@@ -81,6 +81,13 @@ export default {
     width: 25%;
     max-width: 100px;
     margin: 20px auto;
+}
+
+.card p {
+    font-size: 17px;
+}
+.card p:first-of-type {
+    margin-top: 15px;
 }
 
 .image {

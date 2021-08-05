@@ -13,10 +13,10 @@
                     <div class="col-12 col-md-12 col-lg-4">
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item"><a class="nav-link">Home</a></li>
-                                <li class="nav-item"><a class="nav-link">Over mij</a></li>
-                                <li class="nav-item"><a class="nav-link">Diensten</a></li>
-                                <li class="nav-item"><a class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#hero')" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#about', -120)" class="nav-link">Over mij</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#services', -120)" class="nav-link">Diensten</a></li>
+                                <li class="nav-item"><a @click="scrollTo('#contact', -120)" class="nav-link">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -28,7 +28,15 @@
 
 <script>
 export default {
-    name: "Header"
+    name: "Header",
+    methods: {
+        scrollTo(selector, yOffset = 0) {
+            const el = document.querySelector(selector);
+            const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+    },
 }
 </script>
 
