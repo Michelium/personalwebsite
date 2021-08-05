@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
-                <form class="mt-4" action="">
+                <form class="mt-4" action="mail.php" method="post">
                     <div v-if="success" class="alert alert-success alert-dismissible fade show" role="alert">
                         <p class="text-dark">Uw bericht is verstuurd! We komen zo spoedig mogelijk bij u terug!</p>
                     </div>
@@ -29,7 +29,7 @@
                         <label for="message" class="text-uppercase">Hoe kan ik helpen?</label>
                         <textarea v-model="message" class="form-control bg-light py-2" name="message" id="message" autocomplete="off" required rows="5"></textarea>
                     </div>
-                    <button :disabled="!loaded" type="submit" class="btn w-100">VERSTUUR</button>
+                    <button  type="submit" class="btn w-100">VERSTUUR</button>
                 </form>
             </div>
             <div class="col-12 col-lg-6">
