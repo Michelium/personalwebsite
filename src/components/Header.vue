@@ -5,7 +5,7 @@
                 <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand d-block d-lg-none" href="">Hamelink Webdevelopment</a>
+                <a class="navbar-brand d-block d-lg-none" @click="scrollTo('#hero')">Hamelink Webdevelopment</a>
                 <div class="row navbar-row mt-1">
                     <div class="col-12 col-md-8 offset-md-1 col-lg-4 offset-lg-2 d-none d-lg-block">
                         <a class="navbar-brand" href="">Hamelink Webdevelopment</a>
@@ -38,6 +38,23 @@ export default {
         }
     },
 }
+
+window.addEventListener("scroll", (event) => {
+    var navbar = document.getElementById('custom-navbar');
+
+    let scroll = document.body.getBoundingClientRect().top;
+
+    function vhToPixels (vh) {
+        return -Math.round(window.innerHeight / (100 / vh));
+    }
+
+    if (scroll < vhToPixels(100) + 32) {
+        console.log('lager')
+        navbar.classList.add('scrolled');
+    } else if (scroll > vhToPixels(100) + 32) {
+        navbar.classList.remove('scrolled')
+    }
+});
 </script>
 
 <style scoped>
@@ -54,8 +71,10 @@ export default {
 }
 
 .scrolled {
-    background: rgb(0, 0, 0) !important;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 100%) !important;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.65) 0%)!important;
+}
+.scrolled *:not(:hover) {
+    color: white!important;
 }
 
 .row {

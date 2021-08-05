@@ -2,7 +2,7 @@
     <section id="contact">
         <div class="row">
             <div class="col-12">
-                <h2>Contact</h2>
+                <h2 class="text-center text-md-start">Contact</h2>
                 <p>Vul het formulier hieronder in en ik reageer binnen 1 werkdag! <br>
                     Je kunt me ook altijd bellen of een mailtje sturen op het onderstaande adres!</p>
             </div>

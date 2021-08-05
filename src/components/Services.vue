@@ -2,7 +2,7 @@
     <section id="services">
         <div class="row">
             <div class="col-12">
-                <h2>Mijn diensten</h2>
+                <h2 class="text-center text-md-start">Mijn diensten</h2>
             </div>
         </div>
         <div class="row">

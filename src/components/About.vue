@@ -2,7 +2,7 @@
     <section id="about">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-uppercase">Over mij</h2>
+                <h2 class="text-uppercase text-center text-md-start">Over mij</h2>
             </div>
         </div>
         <div class="row">
