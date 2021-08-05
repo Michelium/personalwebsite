@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-$contents .= "<p>Bedrijfsnaam: $name</p>";
+$contents = "<p>Bedrijfsnaam: $name</p>";
 $contents .= "<p>Email: $email</p>";
 $contents .= "<p>Telefoonnummer: $phone</p>";
 $contents .= "<p>Bericht: $message</p>";
