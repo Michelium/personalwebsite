@@ -1,6 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
-@import "_responsive.css";
 
 :root {
     --purple: #8D39FA;
