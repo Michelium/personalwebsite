@@ -676,3 +676,94 @@
   INFO [e583d620] Running /usr/bin/env echo "Branch master (at 703db5e42673c06383503b5f102a650c81a63284) deployed as release 20211028122942 by Michel" >> ~/domains/michelhamelink.nl/revisions.log as u114524p110947@web0139.zxcs.nl
  DEBUG [e583d620] Command: cd ~/domains/michelhamelink.nl/releases && /usr/bin/env echo "Branch master (at 703db5e42673c06383503b5f102a650c81a63284) deployed as release 20211028122942 by Michel" >> ~/domains/michelhamelink.nl/revisions.log
   INFO [e583d620] Finished in 1.221 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2021-10-28 14:33:13 +0200 cap prod deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [30e816f7] Running /usr/bin/env mkdir -p /home/u114524p110947/tmp as u114524p110947@web0139.zxcs.nl
+ DEBUG [30e816f7] Command: /usr/bin/env mkdir -p /home/u114524p110947/tmp
+  INFO [30e816f7] Finished in 0.919 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh 0.0%
+  INFO Uploading /home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh 100.0%
+  INFO [abebad12] Running /usr/bin/env chmod 700 /home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh as u114524p110947@web0139.zxcs.nl
+ DEBUG [abebad12] Command: /usr/bin/env chmod 700 /home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh
+  INFO [abebad12] Finished in 0.608 seconds with exit status 0 (successful).
+  INFO [90226694] Running /usr/bin/env git ls-remote git@github.com:Michelium/personalwebsite.git HEAD as u114524p110947@web0139.zxcs.nl
+ DEBUG [90226694] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh" ; /usr/bin/env git ls-remote git@github.com:Michelium/personalwebsite.git HEAD )
+ DEBUG [90226694] 	e6837f5f8ce34ca99c36f66a1f30de7cc405e70f	HEAD
+  INFO [90226694] Finished in 1.806 seconds with exit status 0 (successful).
+  INFO [3f2d7a63] Running /usr/bin/env mkdir -p ~/domains/michelhamelink.nl/shared ~/domains/michelhamelink.nl/releases as u114524p110947@web0139.zxcs.nl
+ DEBUG [3f2d7a63] Command: /usr/bin/env mkdir -p ~/domains/michelhamelink.nl/shared ~/domains/michelhamelink.nl/releases
+  INFO [3f2d7a63] Finished in 0.572 seconds with exit status 0 (successful).
+ DEBUG [5113ebb0] Running [ -f ~/domains/michelhamelink.nl/current/REVISION ] as u114524p110947@web0139.zxcs.nl
+ DEBUG [5113ebb0] Command: [ -f ~/domains/michelhamelink.nl/current/REVISION ]
+ DEBUG [5113ebb0] Finished in 0.593 seconds with exit status 0 (successful).
+ DEBUG [fdae2497] Running /usr/bin/env cat ~/domains/michelhamelink.nl/current/REVISION 2>/dev/null as u114524p110947@web0139.zxcs.nl
+ DEBUG [fdae2497] Command: /usr/bin/env cat ~/domains/michelhamelink.nl/current/REVISION 2>/dev/null
+ DEBUG [fdae2497] 	703db5e42673c06383503b5f102a650c81a63284
+ DEBUG [fdae2497] Finished in 0.609 seconds with exit status 0 (successful).
+ DEBUG [74031b82] Running [ -f ~/domains/michelhamelink.nl/repo/HEAD ] as u114524p110947@web0139.zxcs.nl
+ DEBUG [74031b82] Command: [ -f ~/domains/michelhamelink.nl/repo/HEAD ]
+ DEBUG [74031b82] Finished in 0.597 seconds with exit status 0 (successful).
+  INFO The repository mirror is at ~/domains/michelhamelink.nl/repo
+ DEBUG [1dfc5920] Running if test ! -d ~/domains/michelhamelink.nl/repo; then echo "Directory does not exist '~/domains/michelhamelink.nl/repo'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [1dfc5920] Command: if test ! -d ~/domains/michelhamelink.nl/repo; then echo "Directory does not exist '~/domains/michelhamelink.nl/repo'" 1>&2; false; fi
+ DEBUG [1dfc5920] Finished in 0.609 seconds with exit status 0 (successful).
+  INFO [561164ff] Running /usr/bin/env git remote set-url origin git@github.com:Michelium/personalwebsite.git as u114524p110947@web0139.zxcs.nl
+ DEBUG [561164ff] Command: cd ~/domains/michelhamelink.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh" ; /usr/bin/env git remote set-url origin git@github.com:Michelium/personalwebsite.git )
+  INFO [561164ff] Finished in 0.625 seconds with exit status 0 (successful).
+  INFO [ddce5821] Running /usr/bin/env git remote update --prune as u114524p110947@web0139.zxcs.nl
+ DEBUG [ddce5821] Command: cd ~/domains/michelhamelink.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ddce5821] 	Fetching origin
+ DEBUG [ddce5821] 	From github.com:Michelium/personalwebsite
+   703db5e..e6837f5  master     -> master
+  INFO [ddce5821] Finished in 1.882 seconds with exit status 0 (successful).
+ DEBUG [04933ac9] Running if test ! -d ~/domains/michelhamelink.nl/repo; then echo "Directory does not exist '~/domains/michelhamelink.nl/repo'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [04933ac9] Command: if test ! -d ~/domains/michelhamelink.nl/repo; then echo "Directory does not exist '~/domains/michelhamelink.nl/repo'" 1>&2; false; fi
+ DEBUG [04933ac9] Finished in 0.529 seconds with exit status 0 (successful).
+  INFO [8973fc42] Running /usr/bin/env mkdir -p ~/domains/michelhamelink.nl/releases/20211028123319 as u114524p110947@web0139.zxcs.nl
+ DEBUG [8973fc42] Command: cd ~/domains/michelhamelink.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh" ; /usr/bin/env mkdir -p ~/domains/michelhamelink.nl/releases/20211028123319 )
+  INFO [8973fc42] Finished in 0.591 seconds with exit status 0 (successful).
+  INFO [2d820853] Running /usr/bin/env git archive master dist | /usr/bin/env tar -x --strip-components 1 -f - -C ~/domains/michelhamelink.nl/releases/20211028123319 as u114524p110947@web0139.zxcs.nl
+ DEBUG [2d820853] Command: cd ~/domains/michelhamelink.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh" ; /usr/bin/env git archive master dist | /usr/bin/env tar -x --strip-components 1 -f - -C ~/domains/michelhamelink.nl/releases/20211028123319 )
+  INFO [2d820853] Finished in 0.606 seconds with exit status 0 (successful).
+ DEBUG [f8e964a4] Running if test ! -d ~/domains/michelhamelink.nl/repo; then echo "Directory does not exist '~/domains/michelhamelink.nl/repo'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [f8e964a4] Command: if test ! -d ~/domains/michelhamelink.nl/repo; then echo "Directory does not exist '~/domains/michelhamelink.nl/repo'" 1>&2; false; fi
+ DEBUG [f8e964a4] Finished in 0.578 seconds with exit status 0 (successful).
+ DEBUG [4f29cdfe] Running /usr/bin/env git rev-list --max-count=1 master as u114524p110947@web0139.zxcs.nl
+ DEBUG [4f29cdfe] Command: cd ~/domains/michelhamelink.nl/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/u114524p110947/tmp/git-ssh-c558e88afdaf93df2f8d.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [4f29cdfe] 	e6837f5f8ce34ca99c36f66a1f30de7cc405e70f
+ DEBUG [4f29cdfe] Finished in 0.592 seconds with exit status 0 (successful).
+ DEBUG [b7017b4f] Running if test ! -d ~/domains/michelhamelink.nl/releases/20211028123319; then echo "Directory does not exist '~/domains/michelhamelink.nl/releases/20211028123319'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [b7017b4f] Command: if test ! -d ~/domains/michelhamelink.nl/releases/20211028123319; then echo "Directory does not exist '~/domains/michelhamelink.nl/releases/20211028123319'" 1>&2; false; fi
+ DEBUG [b7017b4f] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO [714d3e0f] Running /usr/bin/env echo "e6837f5f8ce34ca99c36f66a1f30de7cc405e70f" > REVISION as u114524p110947@web0139.zxcs.nl
+ DEBUG [714d3e0f] Command: cd ~/domains/michelhamelink.nl/releases/20211028123319 && /usr/bin/env echo "e6837f5f8ce34ca99c36f66a1f30de7cc405e70f" > REVISION
+  INFO [714d3e0f] Finished in 0.582 seconds with exit status 0 (successful).
+  INFO [e19b4a62] Running /usr/bin/env ln -s ~/domains/michelhamelink.nl/releases/20211028123319 ~/domains/michelhamelink.nl/releases/current as u114524p110947@web0139.zxcs.nl
+ DEBUG [e19b4a62] Command: /usr/bin/env ln -s ~/domains/michelhamelink.nl/releases/20211028123319 ~/domains/michelhamelink.nl/releases/current
+  INFO [e19b4a62] Finished in 0.530 seconds with exit status 0 (successful).
+  INFO [c500bab3] Running /usr/bin/env mv ~/domains/michelhamelink.nl/releases/current ~/domains/michelhamelink.nl as u114524p110947@web0139.zxcs.nl
+ DEBUG [c500bab3] Command: /usr/bin/env mv ~/domains/michelhamelink.nl/releases/current ~/domains/michelhamelink.nl
+  INFO [c500bab3] Finished in 0.572 seconds with exit status 0 (successful).
+ DEBUG [0bb3cb81] Running /usr/bin/env ls -x ~/domains/michelhamelink.nl/releases as u114524p110947@web0139.zxcs.nl
+ DEBUG [0bb3cb81] Command: /usr/bin/env ls -x ~/domains/michelhamelink.nl/releases
+ DEBUG [0bb3cb81] 	20210805113710	20210805113943	20211028115732	20211028122614	20211028122942
+20211028123319
+ DEBUG [0bb3cb81] Finished in 0.607 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on web0139.zxcs.nl
+ DEBUG [4e2bda29] Running [ -d ~/domains/michelhamelink.nl/current ] as u114524p110947@web0139.zxcs.nl
+ DEBUG [4e2bda29] Command: [ -d ~/domains/michelhamelink.nl/current ]
+ DEBUG [4e2bda29] Finished in 0.589 seconds with exit status 0 (successful).
+ DEBUG [c46452c6] Running /usr/bin/env readlink ~/domains/michelhamelink.nl/current as u114524p110947@web0139.zxcs.nl
+ DEBUG [c46452c6] Command: /usr/bin/env readlink ~/domains/michelhamelink.nl/current
+ DEBUG [c46452c6] 	/home/u114524p110947/domains/michelhamelink.nl/releases/20211028123319
+ DEBUG [c46452c6] Finished in 0.605 seconds with exit status 0 (successful).
+  INFO [1b3ece7f] Running /usr/bin/env rm -rf ~/domains/michelhamelink.nl/releases/20210805113710 as u114524p110947@web0139.zxcs.nl
+ DEBUG [1b3ece7f] Command: /usr/bin/env rm -rf ~/domains/michelhamelink.nl/releases/20210805113710
+  INFO [1b3ece7f] Finished in 0.606 seconds with exit status 0 (successful).
+ DEBUG [0d7aa9f3] Running if test ! -d ~/domains/michelhamelink.nl/releases; then echo "Directory does not exist '~/domains/michelhamelink.nl/releases'" 1>&2; false; fi as u114524p110947@web0139.zxcs.nl
+ DEBUG [0d7aa9f3] Command: if test ! -d ~/domains/michelhamelink.nl/releases; then echo "Directory does not exist '~/domains/michelhamelink.nl/releases'" 1>&2; false; fi
+ DEBUG [0d7aa9f3] Finished in 0.589 seconds with exit status 0 (successful).
+  INFO [0562b5bd] Running /usr/bin/env echo "Branch master (at e6837f5f8ce34ca99c36f66a1f30de7cc405e70f) deployed as release 20211028123319 by Michel" >> ~/domains/michelhamelink.nl/revisions.log as u114524p110947@web0139.zxcs.nl
+ DEBUG [0562b5bd] Command: cd ~/domains/michelhamelink.nl/releases && /usr/bin/env echo "Branch master (at e6837f5f8ce34ca99c36f66a1f30de7cc405e70f) deployed as release 20211028123319 by Michel" >> ~/domains/michelhamelink.nl/revisions.log
+  INFO [0562b5bd] Finished in 0.589 seconds with exit status 0 (successful).
