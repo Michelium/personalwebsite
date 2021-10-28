@@ -114,12 +114,10 @@ p {
 }
 
 @media (max-width: 991px) {
-    section {
-        /* overflow-x: hidden;; */
-    }
     .background-pattern {
         transform: unset;
         height: 1500px;
+        pointer-events: none; 
     }
 
     h3 {

@@ -79,6 +79,9 @@ export default {
 </script>
 
 <style scoped>
+section {
+    z-index: 3;
+}
 
 .card {
     padding: 45px 30px;
