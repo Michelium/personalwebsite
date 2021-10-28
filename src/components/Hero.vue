@@ -3,14 +3,14 @@
         <div class="row mx-0 w-100 vh-100 d-flex align-items-center">
             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                 <div class="row">
-                    <div class="col-12 col-md-5 my-auto">
+                    <div class="col-12 col-lg-6 my-auto">
                         <h3 class="text-white fw-light">Hallo, ik ben</h3>
                         <h1 class="text-purple text-uppercase fw-bolder">Michel Hamelink</h1>
                         <h3 class="text-white fw-light">Freelance webdeveloper en ik kan je helpen met <wbr> het ontwikkelen van jouw nieuwe website.</h3>
                         <button type="button" class="btn px-4 py-2 mt-md-5 text-white" @click="scrollTo('#contact', -120)" ><span>Contact me</span></button>
                     </div>
-                    <div class="col-12 col-md-6 offset-md-1">
-                        <img class="float-end" src="~@/assets/images/hero/michelhamelink.jpg" alt="">
+                    <div class="col-12 col-lg-6 text-center">
+                        <img class="float-lg-end" src="~@/assets/images/hero/michelhamelink.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -40,6 +40,7 @@ section {
 
 img {
     border-radius: 50%;;
+    width: 70%;
 }
 
 button {
@@ -68,6 +69,11 @@ button span {
 
     .text-section {
         margin-top: 150px;
+    }
+
+    img {
+        width: 55%;
+        margin-top: 120px;
     }
 }
 

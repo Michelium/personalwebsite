@@ -10,9 +10,9 @@
             <div class="col-12 col-xl-4 mb-4 mb-xl-0">
                 <div class="card">
                     <div class="image">
-                        <img src="~@/assets/images/services/card-1.svg" alt="Development">
+                        <img src="~@/assets/images/services/card-1.svg" alt="Development"> <h3 class="d-block d-lg-none">Web <br> Development</h3>
                     </div>
-                    <h3>Web <br> Development</h3>
+                    <h3 class="d-none d-lg-block">Web <br> Development</h3>
                     <h4>Snel en responsive voor elk scherm</h4>
                     <p>Een website moet op elk scherm functioneren en een website moet zo snel mogelijk zijn. Hier houd ik me mee bezig als webdeveloper.</p>
                 </div>
@@ -20,9 +20,9 @@
             <div class="col-12 col-xl-4 mb-4 mb-xl-0">
                 <div class="card">
                     <div class="image">
-                        <img src="~@/assets/images/services/card-2.svg" alt="Design">
+                        <img src="~@/assets/images/services/card-2.svg" alt="Design"> <h3 class="d-block d-lg-none">Web <br> Design</h3>
                     </div>
-                    <h3>Web <br> Design</h3>
+                    <h3 class="d-none d-lg-block">Web <br> Design</h3>
                     <h4>Design voor doelgroep van de website</h4>
                     <p>De website wordt ontwikkeld voor de gebruikers hiervan. Het is belangrijk dat de informatie op je website jouw specifieke doelgroep aanspreekt.</p>
                 </div>
@@ -30,9 +30,9 @@
             <div class="col-12 col-xl-4 mb-4 mb-xl-0">
                 <div class="card">
                     <div class="image">
-                        <img src="~@/assets/images/services/card-3.svg" alt="Onderhoud">
+                        <img src="~@/assets/images/services/card-3.svg" alt="Onderhoud"> <h3 class="d-block d-lg-none">Web <br> Onderhoud</h3>
                     </div>
-                    <h3>Web <br> Onderhoud</h3>
+                    <h3 class="d-none d-lg-block">Web <br> Onderhoud</h3>
                     <h4>Ook na oplevering up to date</h4>
                     <p>Ook na oplevering van de website moeten er soms nog enkele dingen worden aangepast. Ik zorg dat ook na oplevering je website up to date blijft!</p>
                 </div>
@@ -77,7 +77,7 @@ h3 {
 }
 
 p {
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 .card {
@@ -111,5 +111,20 @@ p {
     align-items: center;
     flex-wrap: wrap;
     min-height: 144px;
+}
+
+@media (max-width: 991px) {
+    section {
+        /* overflow-x: hidden;; */
+    }
+    .background-pattern {
+        transform: unset;
+        height: 1500px;
+    }
+
+    h3 {
+        font-size: 26px;
+        margin-left: 25px;
+    }
 }
 </style>

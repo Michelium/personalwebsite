@@ -68,6 +68,7 @@ window.addEventListener("scroll", (event) => {
     right: 0;
     z-index: 15;
     position: fixed;
+    white-space:nowrap;
 }
 
 .scrolled {
@@ -122,7 +123,7 @@ window.addEventListener("scroll", (event) => {
     .custom-navbar-light {
         background: var(--purple) !important;
         top: 0;
-        padding-bottom: 14px !important;
+        /* padding-bottom: 14px !important; */
     }
 
     .custom-navbar-light .row:first-of-type {
