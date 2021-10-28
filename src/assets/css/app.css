@@ -1,42 +1,72 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 @import "_responsive.css";
 
 :root {
     --purple: #8D39FA;
     --purple-hover: #7b1bf6;
-    --grey: #707070;
+    --dark-grey: #222222;
+    --grey: #535353;
     --light-grey: #ececec;
 }
 
 main {
-    font-family: 'Lato', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 h1 {
-    font-size: 60px;
-    color: var(--purple);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.0022em;
 }
 
 h2 {
-    font-size: 40px;
-    color: var(--grey);
-    text-transform: uppercase;
-    margin-bottom: 25px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0.12em;
 }
 
 h3 {
-    font-size: 30px;
-    color: var(--purple);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
 }
 
 h4 {
-    font-size: 22px;
     color: var(--grey);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    font-variant: small-caps;
+}
+
+h5 {
+    color: var(--grey);
+    font-size: 24px;
+    line-height: 28.64px;;
 }
 
 p {
-    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.0007em;
+}
+
+small {
+    color: var(--grey);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 section:not(#header) {

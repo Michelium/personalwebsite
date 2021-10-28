@@ -1,6 +1,6 @@
 <template>
     <section id="header">
-        <nav class="navbar navbar-expand-lg navbar-light custom_navbar custom-navbar-light mx-0 px-0 pt-2 pb-0 mb-2 mb-sm-5 navbar-fixed-top" id="custom-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light custom_navbar custom-navbar-light mx-0 px-0 mb-2 mb-sm-5 navbar-fixed-top" id="custom-navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -76,6 +76,10 @@ window.addEventListener("scroll", (event) => {
 .scrolled *:not(:hover) {
     color: white!important;
 }
+.scrolled .navbar-brand:hover {
+    color: var(--light-grey)!important;
+}
+
 
 .row {
     flex-grow: 1;
@@ -83,16 +87,18 @@ window.addEventListener("scroll", (event) => {
 
 .custom-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 12px;
-    padding: .9rem 20px;
+    padding: 0 20px;
     letter-spacing: 1px;
     color: var(--grey);
     font-weight: 500;
     text-transform: uppercase;
     opacity: 1 !important;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
 }
 
 .custom-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: var(--purple);
+    color: var(--light-grey)!important;
     cursor: pointer;
 }
 @media (max-width: 991.98px) {
@@ -134,8 +140,6 @@ window.addEventListener("scroll", (event) => {
 }
 
 @media (max-width: 766px) {
-
-
     .col-12 {
         text-align: center;
     }

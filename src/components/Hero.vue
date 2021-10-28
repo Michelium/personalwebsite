@@ -1,11 +1,18 @@
 <template>
     <section id="hero">
-        <div class="row mx-0">
-            <div class="col-12 col-md-8 offset-md-1 offset-lg-1 col-xl-6 offset-xl-2 col-xxl-4 text-section">
-                <h2 class="text-white">Hallo, ik ben</h2>
-                <h1 class="text-purple text-uppercase fw-bolder">Michel Hamelink</h1>
-                <h3 class="text-white fw-normal w-100">Freelance webdeveloper en ik kan je helpen met <wbr> het ontwikkelen van jouw nieuwe website.</h3>
-                <a class="btn btn-outline-light px-4 fw-light mt-md-5" @click="scrollTo('#contact', -120)" >CONTACT ME</a>
+        <div class="row mx-0 w-100 vh-100 d-flex align-items-center">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                <div class="row">
+                    <div class="col-12 col-md-5 my-auto">
+                        <h3 class="text-white fw-light">Hallo, ik ben</h3>
+                        <h1 class="text-purple text-uppercase fw-bolder">Michel Hamelink</h1>
+                        <h3 class="text-white fw-light">Freelance webdeveloper en ik kan je helpen met <wbr> het ontwikkelen van jouw nieuwe website.</h3>
+                        <button type="button" class="btn px-4 py-2 mt-md-5 text-white" @click="scrollTo('#contact', -120)" ><span>Contact me</span></button>
+                    </div>
+                    <div class="col-12 col-md-6 offset-md-1">
+                        <img class="float-end" src="~@/assets/images/hero/michelhamelink.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -27,17 +34,23 @@ export default {
 
 <style scoped>
 section {
-    background-image: url("~@/assets/images/hero/hero.png");
-    background-size: 60%;
-    background-position: right 75%;
-    background-repeat: no-repeat;
     min-height: 100vh;
     background-color: black;
 }
 
-h2 {
-    text-transform: unset;
-    margin-bottom: unset;
+img {
+    border-radius: 50%;;
+}
+
+button {
+    background-color: #333333;
+}
+button span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.0043em;
 }
 
 @media (min-width: 991px) {

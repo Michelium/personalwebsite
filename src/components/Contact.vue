@@ -2,7 +2,7 @@
     <section id="contact">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center text-md-start">Contact</h2>
+                <h2 class="text-center text-md-start mb-4">Contact</h2>
                 <p>Vul het formulier hieronder in en ik reageer binnen 1 werkdag! <br>
                     Je kunt me ook altijd bellen of een mailtje sturen op het onderstaande adres!</p>
             </div>
@@ -14,22 +14,22 @@
                         <p class="text-dark">Uw bericht is verstuurd! We komen zo spoedig mogelijk bij u terug!</p>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="name" class="text-uppercase">Naam:</label>
+                        <label for="name">Naam:</label>
                         <input v-model="name" class="form-control bg-light py-2" type="text" name="name" id="name" autocomplete="off" required>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="email" class="text-uppercase">E-mail:</label>
+                        <label for="email">E-mail:</label>
                         <input v-model="email" class="form-control bg-light py-2" type="email" name="email" id="email" autocomplete="off" required>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="phone">TELEFOON: (niet verplicht)</label>
+                        <label for="phone">Telefoon: (niet verplicht)</label>
                         <input v-model="phone" class="form-control bg-light py-2" type="text" name="phone" id="phone" autocomplete="off">
                     </div>
                     <div class="form-group mb-3">
-                        <label for="message" class="text-uppercase">Hoe kan ik helpen?</label>
+                        <label for="message">Hoe kan ik helpen?</label>
                         <textarea v-model="message" class="form-control bg-light py-2" name="message" id="message" autocomplete="off" required rows="5"></textarea>
                     </div>
-                    <button  type="submit" class="btn w-100">VERSTUUR</button>
+                    <button  type="submit" class="btn w-100">Verstuur</button>
                 </form>
             </div>
             <div class="col-12 col-lg-6">
@@ -79,15 +79,17 @@ export default {
 </script>
 
 <style scoped>
+
 .card {
     padding: 45px 30px;
     border: none;
     height: 100%;
     transition: 0.2s;
+    background-color: transparent;
 }
 
-.card:hover {
-    background-color: var(--light-grey);
+p {
+    opacity: 0.7;
 }
 
 label {
@@ -106,14 +108,14 @@ input:focus, input:hover, textarea:focus, textarea:hover {
 }
 
 button {
-    background-color: var(--purple);
+    background-color: var(--dark-grey);
     color: white;
     padding: 8px 0;
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: var(--purple-hover);
+    background-color: var(--grey);
     color: white;
     cursor: pointer;
 }
@@ -122,10 +124,11 @@ th {
     color: var(--grey);
     font-weight: 300;
     width: 146px;
+    opacity: 0.7;
 }
 
 a {
-    color: var(--purple);
+    color: black;;
     padding: 8px 0;
 }
 
