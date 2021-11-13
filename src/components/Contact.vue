@@ -44,7 +44,7 @@
                                 </tr>
                                 <tr>
                                     <th>telefoon:</th>
-                                    <td class="float-end float-sm-none"><a href="tel:06-16197852">06-16197852</a></td>
+                                    <td class="float-end float-sm-none"><a href="tel:06-49194506">06-49194506</a></td>
                                 </tr>
                                 <tr>
                                     <th>e-mail:</th>
